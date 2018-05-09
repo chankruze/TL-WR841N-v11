@@ -12,5 +12,6 @@ Default `Username` : `root`
 
 Default `Password` : `empty`
 
-Default `IP`- if Freifunk: `192.168.133.1`
-            - if Open-Wrt: `192.168.1.1`
+Default `IP`:
+    - if Freifunk: `192.168.133.1`
+    - if Open-Wrt: `192.168.1.1`
