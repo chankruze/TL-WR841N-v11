@@ -14,7 +14,9 @@ wget http://www.example.org/original_firmware.bin
 mtd -r write /tmp/original_firmware.bin firmware
 ```
 For example for my case i used these code :
+
 compare it:
+
 ![My Snippet](https://image.ibb.co/k8DCM7/Screenshot_from_2018_05_09_09_29_27.png)
 
 My Firmware is hosted on : http://www.321webs.com/sendfile/161439ad.htm
