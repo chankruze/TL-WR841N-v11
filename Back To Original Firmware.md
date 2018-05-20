@@ -21,8 +21,12 @@ compare it:
 
 My Firmware is hosted on : 
 - [ffulm Firmware](http://www.321webs.com/sendfile/161439ad.htm)
-- [TP-Link Firmware](http://www.321webs.com/sendfile/162226ad.htm)(EU)
+- [TP-Link Firmware](http://www.321webs.com/sendfile/162226ad.htm) (EU).
 By the way by flashing tp link firmwares via **mtd** you will  brick your device.
+
+![WARNING](https://wiki.openwrt.org/_media/meta/icons/tango/dialog-warning.png)WARNING: If you get the error `Writing from /tmp/tplink.bin to firmware … [e]Failed to erase block` after flashing via the **mtd** command, do not reboot or shutdown or you will brick your device!
+
+# Unbrick TL-TW841N
 
 ## TFTP recovery via bootloader
 
@@ -67,7 +71,7 @@ File <wr841nv11_tp_recovery.bin> : error 2 in system call CreateFile The system 
 
 If it is TL-WR841N/ND i recommand to use TFTP install via Bootloader(previous method)
 
-Complete guide [HERE](https://wiki.openwrt.org/toh/tp-link/tl-wr841nd)
+Complete guide for TFTP install/recovery via serial can be found [HERE](https://wiki.openwrt.org/toh/tp-link/tl-wr841nd)
 
 ![Bricked Image-1](https://image.ibb.co/kKaWko/IMG_20180521_002058.jpg)
 
