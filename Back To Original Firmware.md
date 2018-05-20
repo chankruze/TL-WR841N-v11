@@ -24,7 +24,9 @@ My Firmware is hosted on :
 - [TP-Link Firmware](http://www.321webs.com/sendfile/162226ad.htm)(EU)
 By the way by flashing tp link firmwares via **mtd** you will  brick your device.
 
-## TFTP recovery via bootloader for v8,v9,v10,v11,v12
+## TFTP recovery via bootloader
+
+Easiest method for v8,v9,v10,v11,v12.
 
 As most other current TP-Link routers this device can be flashed and debricked without serial access. Basically, the procedure is as follows:
 
@@ -33,6 +35,8 @@ As most other current TP-Link routers this device can be flashed and debricked w
    3. Power on the router while pressing the reset button until the lock LED is lighting up
    4. Wait for the router to reboot
    5. Now your router has tplink firmware but now the only problem is our router's LAN ports are behaving like WAN port.To fix this connect to router via wifi and flash the original tplink firmware via web interface choosing system upgrade option.Now Enjoy ! 
+   
+   ![New Life](https://image.ibb.co/dx4Gko/IMG_20180520_232938.jpg)
 
 **:!:WARNING! For hardware version 13, it is very likely that u-boot will be erased while using this method, as most mediatek SOC models tend to! Therefore, do NOT flash sysupgrade image using TFTP! Instead, follow the instructions described here: tftp_recovery_de-bricking for the factory image, for OpenWrt image, you must append the bootloader using dd. If the bootloader gets overwritten, the only way out is to use a SPI flash programmer to reflash it.**
 
@@ -57,7 +61,17 @@ File <wr841nv11_tp_recovery.bin> : error 2 in system call CreateFile The system 
 - [tftpd64.exe](https://github-production-release-asset-2e65be.s3.amazonaws.com/120207563/beb47a9e-0999-11e8-995a-5bd13580105c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180520T174426Z&X-Amz-Expires=300&X-Amz-Signature=efc1da2adc550629cdebe273469eade15bc008af8fb83db7288e118fab02c430&X-Amz-SignedHeaders=host&actor_id=29806845&response-content-disposition=attachment%3B%20filename%3DTftpd64-4.60-setup.exe&response-content-type=application%2Foctet-stream)
 - [TFTP Releases](https://github.com/peacepenguin/tftpd64/releases)
 
-**If following Seriel Access method**
+**TFTP install/recovery via serial**
+
+                         ! WARNING !
+If it is TL-WR841N/ND i recommand to use TFTP install via Bootloader(previous method)
+
+Complete guide [HERE](https://wiki.openwrt.org/toh/tp-link/tl-wr841nd)
+
+![Bricked Image-1](https://image.ibb.co/kKaWko/IMG_20180521_002058.jpg)
+
+![Seriel Identification](https://image.ibb.co/mRWwko/841v12_board_serialumurl.jpg)
+
 - Driver
    - [Profilic_Win8_x64_x86.zip](https://fs07n1.sendspace.com/dl/09bbf5d3aeedf7ee2895e467afe41efa/5b01b07a1ed3b3e3/5m5afw/Profilic_Win8_x64_x86.zip)
 - Chip
