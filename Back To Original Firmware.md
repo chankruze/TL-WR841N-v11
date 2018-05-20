@@ -19,7 +19,10 @@ compare it:
 
 ![My Snippet](https://image.ibb.co/k8DCM7/Screenshot_from_2018_05_09_09_29_27.png)
 
-My Firmware is hosted on : http://www.321webs.com/sendfile/161439ad.htm
+My Firmware is hosted on : 
+- [ffulm Firmware](http://www.321webs.com/sendfile/161439ad.htm)
+- [TP-Link Firmware](http://www.321webs.com/sendfile/162226ad.htm)(EU)
+By the way by flashing tp link firmwares via **mtd** you will  brick your device.
 
 ## TFTP recovery via bootloader for v8,v9,v10,v11,v12
 
