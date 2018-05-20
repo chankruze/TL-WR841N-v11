@@ -32,6 +32,7 @@ As most other current TP-Link routers this device can be flashed and debricked w
    2. Put an OpenWrt factory image or tp-link image in the root directory of an TFTP server and start it.Just the filename has to be named as a `wr841nv11_tp_recovery.bin`
    3. Power on the router while pressing the reset button until the lock LED is lighting up
    4. Wait for the router to reboot
+   5. Now your router has tplink firmware but now the only problem is our router's LAN ports are behaving like WAN port.To fix this connect to router via wifi and flash the original tplink firmware via web interface choosing system upgrade option.Now Enjoy ! 
 
 **:!:WARNING! For hardware version 13, it is very likely that u-boot will be erased while using this method, as most mediatek SOC models tend to! Therefore, do NOT flash sysupgrade image using TFTP! Instead, follow the instructions described here: tftp_recovery_de-bricking for the factory image, for OpenWrt image, you must append the bootloader using dd. If the bootloader gets overwritten, the only way out is to use a SPI flash programmer to reflash it.**
 
