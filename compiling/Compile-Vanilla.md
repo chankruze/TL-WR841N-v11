@@ -64,6 +64,8 @@ You might need to clean your build environment every now and then. The following
 
 ## In a Nutshell:
    - `git clone https://www.github.com/openwrt/openwrt -b branch_name`
+   - `./scripts/feeds update -a`
+   - `./scripts/feeds install -a`
    - `make menuconfig` and set "Target System", "Subtarget", "Target Profile" and modify set of package(s).
    - `make defconfig`
    - `scripts/diffconfig.sh >mydiffconfig` (save your changes in the text file mydiffconfig)
