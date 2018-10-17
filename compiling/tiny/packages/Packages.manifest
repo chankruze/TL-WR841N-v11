@@ -5,10 +5,10 @@ Source: package/base-files
 License: GPL-2.0
 Section: base
 Architecture: mips_24kc
-Installed-Size: 67044
+Installed-Size: 67040
 Filename: base-files_192-r7352-9ac7eb4_mips_24kc.ipk
-Size: 68042
-SHA256sum: 77ee14ea7606cd34033fb40082b005eda702811e725c7adb56a3235e0d91d099
+Size: 68040
+SHA256sum: ed03b4a3151c10c23bcd8bed56c7a745a83237f99e82855a870a2de83127cdfb
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: fstools
@@ -462,6 +462,21 @@ Filename: libip6tc_1.6.2-1_mips_24kc.ipk
 Size: 18567
 SHA256sum: 736f9a5914bf48945ed86f9491338eb7f8680391eacf5737dbb0b7f24993fb40
 Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2018-07-24-94b1366d-1
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 6140
+Filename: libiwinfo-lua_2018-07-24-94b1366d-1_mips_24kc.ipk
+Size: 6816
+SHA256sum: ea30f3ed8112dd28edc220fccb2dedfe7db6734ce7e230b0c39a14709ee99492
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
 
 Package: libiwinfo
 Version: 2018-07-24-94b1366d-1
