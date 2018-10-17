@@ -63,7 +63,8 @@ You might need to clean your build environment every now and then. The following
     - Clean luci : `make package/luci/clean`
 
 ## In a Nutshell:
-   - `git clone https://www.github.com/openwrt/openwrt -b branch_name`
+   - `git clone https://www.github.com/openwrt/openwrt -b branch_name`(master | openwrt-17.01 | openwrt-18.06) 
+   - `cd openwrt`
    - `./scripts/feeds update -a`
    - `./scripts/feeds install -a`
    - `make menuconfig` and set "Target System", "Subtarget", "Target Profile" and modify set of package(s).
@@ -72,8 +73,11 @@ You might need to clean your build environment every now and then. The following
    - `make download` (download all dependency source files before final make, enables multi-core compilation)
    - `make` / `make world` or (make -jx)
    - **if build failed ...**
-        - run `make -j1 V=s` (build OpenWRT with console logging,one job ata a time & can see where build failed.).
-        
+        - run `make -j1 V=s` (build OpenWRT with console logging,one job ata a time & can see where build failed.)
+## Totally Automate
+   - Skip all manual work by executing `Build-Vanilla.sh`
+	- It will clone source,update&install feed,manu config and defconfig,download packages as well as start the build process.
+
 ## Troubleshooting
 - ### *-factory.bin and *-sysupgrade.bin images for my device do not get generated
   When you execute make to build an OpenWRT image for your device, both a sysupgrade and a factory image should be generated for every board that is linked to the device profile that you have selected via make config or make menuconfig.
