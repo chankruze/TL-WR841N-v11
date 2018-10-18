@@ -1,11 +1,17 @@
+## Installing Dependencies
+- We need following utilities to be installed in order to compile firmware
+```
+sudo apt install subversion g++ zlib1g-dev build-essential git python time
+sudo apt install libncurses5-dev gawk gettext unzip file libssl-dev wget
+```
 ## Checking out Source
-- clone latest source repository by `git clone https://www.github.com/openwrt/openwrt -b branch_name`
+- Clone latest source repository by `git clone https://www.github.com/openwrt/openwrt -b branch_name`
 - Now change directory to openwrt by `cd openwrt`.This is our `<buildroot dir>` for this guide.
 ## Updating Feeds
 - Update feeds: `./scripts/feeds update -a`
 - Make downloaded package(s) available in make menuconfig:
-        - single package : `./scripts/feeds install <PACKAGENAME>`
-        - all packages : `./scripts/feeds install -a`
+    - single package : `./scripts/feeds install <PACKAGENAME>`
+    - all packages : `./scripts/feeds install -a`
 
 ## Image Configuration
 
