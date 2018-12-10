@@ -1,0 +1,80 @@
+ubuntu@ip-xxx-xx-xx-xx:~/firmware-mod-kit$ ./build-firmware.sh
+Firmware Mod Kit (build) 0.99, (c)2011-2013 Craig Heffner, Jeremy Collake
+
+Building new squashfs file system... (this may take several minutes!)
+Squashfs block size is 128 Kb
+Parallel mksquashfs: Using 1 processor
+Creating 4.0 filesystem on /home/ubuntu/firmware-mod-kit/fmk/new-filesystem.squashfs, block size 131072.
+[=====================================================================================================================-] 455/455 100%
+Exportable Squashfs 4.0 filesystem, lzma compressed, data block size 131072
+        compressed data, compressed metadata, compressed fragments, compressed xattrs
+        duplicates are removed
+Filesystem size 2757.97 Kbytes (2.69 Mbytes)
+        26.53% of uncompressed filesystem size (10394.39 Kbytes)
+Inode table size 4424 bytes (4.32 Kbytes)
+        22.89% of uncompressed inode table size (19328 bytes)
+Directory table size 5944 bytes (5.80 Kbytes)
+        44.59% of uncompressed directory table size (13330 bytes)
+Number of duplicate files found 8
+Number of inodes 596
+Number of files 409
+Number of fragments 31
+Number of symbolic links  78
+Number of device nodes 69
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 40
+Number of ids (unique uids + gids) 1
+Number of uids 1
+        root (0)
+Number of gids 1
+        root (0)
+Remaining free bytes in firmware image: 57344
+Processing 3 header(s) from /home/ubuntu/firmware-mod-kit/fmk/new-firmware.bin...
+Processing header at offset 0...sorry, this file type is not supported.
+checksum update(s) failed!
+Processing header at offset 14784...checksum(s) updated OK.
+Processing header at offset 131584...sorry, this file type is not supported.
+checksum update(s) failed!
+CRC(s) updated successfully.
+
+Correcting TP-Link firmware image ... [tpl-tool] WARNING: Unknown device (0x08410011).
+[tpl-tool] WARNING: Component files may not be valid.
+[tpl-tool] WARNING: Invalid Image Checksum.
+[tpl-tool] WARNING: Component files may not be valid.
+[tpl-tool] WARNING: Invalid Image2 Checksum.
+[tpl-tool] WARNING: kernel/rootfs files may not be valid.
+Image file "/home/ubuntu/firmware-mod-kit/fmk/new-firmware.bin" successfully extracted.
+[tpl-tool] WARNING: Unknown device (0x08410011).
+[tpl-tool] WARNING: Using image size from header.
+Image file "/home/ubuntu/firmware-mod-kit/fmk/new-firmware.bin-new" successfully rebuilt.
+Filename           : /home/ubuntu/firmware-mod-kit/fmk/new-firmware.bin
+Filesize           : 0x003e0200 / 4063744
+
+Image Vendor       : TP-LINK Technologies
+Image Version      : ver. 1.0
+Image Size         : 0x003e0200 / 4063744
+Image Checksum     : e7 61 b3 4b c7 ee bd 6f 6f fc 88 0d 2a 79 a1 d9  (Valid)
+
+Product Id         : 0x08410011  (Unknown)
+Product Version    : 0x00000001
+Firmware Version   : 3.16.9
+
+Bootldr Offset     : 0x00000000 /       0
+Bootldr Length     : 0x0000c454 /   50260
+
+Image2 Size        : 0x003c0000 / 3932160
+Image2 Checksum    : 99 31 55 2a 0a 6b b3 8d 6a d0 65 90 9c 5d 87 c8  (Valid)
+
+Kernel Offset      : 0x00000200 /     512
+Kernel Length      : 0x000cf58a /  849290
+Kernel Load Address: 0x80002000
+Kernel Entry Point : 0x801cd810
+Kernel Checksum    : 53 52 25 31 d8 2e 1b 0e d1 98 97 33 57 bf 16 be  (Not Verified)
+
+Rootfs Offset      : 0x00100000 / 1048576
+Rootfs Length      : 0x002c0000 / 2883584
+Done
+Finished!
+New firmware image has been saved to: /home/ubuntu/firmware-mod-kit/fmk/new-firmware.bin
+
