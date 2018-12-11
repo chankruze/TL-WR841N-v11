@@ -1,0 +1,18 @@
+BODY {
+	MARGIN: 42 15 15 15;
+	padding: 0px;
+	text-align: justify;
+	background: #4ACBD6;
+	FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+	COLOR: #000000;
+}
+::-webkit-scrollbar {width: 0px;}
+DIV	{width: 100%;}
+P	{LIST-STYLE-POSITION: outside; FONT-SIZE: 12px; }
+H1	{FONT-WEIGHT: bold; FONT-SIZE: 16px; }
+H2	{FONT-WEIGHT: bold; FONT-SIZE: 14px; }
+UL	{LIST-STYLE-POSITION: outside; FONT-SIZE: 12px; }
+OL	{LIST-STYLE-POSITION: outside; FONT-SIZE: 12px;}
+TH	{FONT-SIZE: 12px;}
+TD	{FONT-SIZE: 12px;}
+

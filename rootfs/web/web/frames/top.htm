@@ -1,0 +1,157 @@
+<html>
+
+<head>
+	<TITLE></TITLE>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+	<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #4ACBD6;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+
+		.style1 {
+			font-family: "Arial";
+			color: #FFFFFF;
+			font-size: 16px;
+			padding-right: 50;
+			text-align: right;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+
+		.style2 {
+			font-size: 14px;
+			font-family: "Arial";
+			font-weight: bold;
+			padding-right: 50;
+			text-align: right;
+			white-space: nowrap;
+			color: #FFFFFF;
+		}
+
+		.style3 {
+			font-size: 14px;
+			font-family: "Arial";
+			font-weight: normal;
+			padding-right: 50;
+			text-align: right;
+			white-space: nowrap;
+			color: #FFFFFF;
+		}
+
+		.topLogo {
+			height: 100px;
+		}
+
+		.tp-logo {
+			height: auto;
+			width: 150px;
+			border: 0;
+			cursor: pointer;
+		}
+
+		.topLogo .router-info {
+			float: right;
+			margin-top: 1%;
+			height: 100px;
+		}
+
+		.topLogo ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: transparent;
+		}
+
+		.topLogo li {
+			float: left;
+		}
+
+		.topLogo li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+	</style>
+	<script language="JavaScript" src="../dynaform/custom.js" type="text/JavaScript"></script>
+	<script type="text/javascript">
+		var mh;
+		var mv;
+		var hl = "StatusHelpRpm.htm";
+
+		var newWin;
+		var url = "http://" + our_web_site;
+
+		if (window.parent == window)
+			window.location.href = url;
+		function Click() { window.event.returnValue = false; }
+		document.oncontextmenu = Click;
+
+		function NewW() {
+			if (newWin) newWin.close();
+			newWin = window.open(url, "", "scrollbars=yes,resizable=yes,toolbar=yes,status=yes,menubar=yes,scrollbar=yes,location=yes");
+			return true;
+		}
+		function ShowUrl() {
+			status = url;
+			return true;
+		}
+		function EraseUrl() {
+			status = "";
+			return true;
+		}
+		var address;
+		var errorFlag;
+		function LoadPage() {
+			if (true == errorFlag)
+				parent.location.href = 'http://' + address;
+		}
+		function LoadNewIp() {
+			errorFlag = true;
+			setTimeout("LoadPage()", 3000);
+		}
+		function stopLoad() {
+			errorFlag = false;
+		}
+	</SCRIPT>
+	<META http-equiv=Pragma content=no-cache>
+	<META http-equiv=Cache-Control content=no-cache>
+	<META http-equiv=Expires content="wed, 26 Feb 1997 08:21:57 GMT">
+	<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+</head>
+
+<body>
+	<div class="topLogo">
+		<ul>
+			<li>
+				<a href="http://www.tp-link.com" target="blank">
+					<img src="../images/logo.png">
+				</a>
+			</li>
+
+			<li class="router-info">
+				<table>
+					<tr>
+						<td class="style1">300M Wireless N Router</td>
+					</tr>
+					<tr>
+						<td class="style2">Model No. TL-WR841N/TL-WR841ND </td>
+					</tr>
+					<tr>
+						<td class="style3"> UI Developer : chankruze </td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+
+	</div>
+</body>
+
+</html>
