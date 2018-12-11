@@ -4,7 +4,7 @@ body::-webkit-scrollbar {width: 0px;}
 BODY {	FONT-SIZE: 12px;	MARGIN: 42 30 30 30;	FONT-FAMILY: "Arial", "Helvetica", "Geneva", "Swiss", "SunSans-Regular", "sans-serif";	color: black;	background: #4ACBD6;}
 TEXTAREA.same{	overflow:auto; border:1; border-style:dashed; font-family :Arial,Helvetica; FONT-SIZE: 12px; background: #4ACBD6; }
 TD   { FONT-SIZE: 12px; height: 24px; text-align: left; white-space:nowrap; vertical-align: middle;}  
-TD.h1 {	FONT-SIZE: 16px; COLOR: #d41010; FONT-WEIGHT: bold; padding-left: 15; } 
+TD.h1 {	FONT-SIZE: 20px; COLOR: #fff; FONT-WEIGHT: bold; padding-left: 15; background: #FF0000;} 
 TD.h2 {	FONT-SIZE: 16px; height: 30px; FONT-WEIGHT: bold; padding-left: 15; white-space:normal;}
 TD.h3 {	FONT-SIZE: 14px; height: 30px; white-space:normal;}  
 TD.h4 { FONT-SIZE: 16px; COLOR: WHITE; background-color:rgb(220,220,220); FONT-WEIGHT: bold; text-align: center;width:20%;}
