@@ -7,7 +7,7 @@ echo "          |__| W I R E L E S S   F R E E D O M"
 echo " --------------------------------------------------"
 echo "             https://github.com/chankruze          "
 echo " --------------------------------------------------"
-git clone https://www.github.com/openwrt/openwrt -b openwrt-18.06
+git clone https://www.github.com/openwrt/openwrt.git -b openwrt-18.06
 cd openwrt
 ./scripts/feeds update -a
 ./scripts/feeds install -a
