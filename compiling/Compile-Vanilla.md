@@ -1,4 +1,10 @@
 ## Installing Dependencies
+To build your own firmware you need a Linux, BSD or MacOSX system (case
+sensitive filesystem required). Cygwin is unsupported because of the lack
+of a case sensitive file system.
+
+You need gcc, binutils, bzip2, flex, python, perl, make, find, grep, diff,
+unzip, gawk, getopt, subversion, libz-dev and libc headers installed.
 - We need following utilities to be installed in order to compile firmware
 ```
 sudo apt install subversion g++ zlib1g-dev build-essential git python time
