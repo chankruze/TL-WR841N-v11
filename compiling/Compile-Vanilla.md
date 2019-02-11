@@ -7,8 +7,11 @@ You need gcc, binutils, bzip2, flex, python, perl, make, find, grep, diff,
 unzip, gawk, getopt, subversion, libz-dev and libc headers installed.
 - We need following utilities to be installed in order to compile firmware
 ```
-sudo apt install gcc gawk gettext unzip binutils file libssl-dev wget bison libncurses-dev autoconf sed g++ zlib1g-dev build-essential git python time
+sudo apt install subversion g++ zlib1g-dev build-essential git python time
+sudo apt install gawk gettext unzip file libssl-dev wget
+sudo apt install gcc flex bison libz-dev libncurses-dev make
 ```
+
 ## Checking out Source
 - Clone latest source repository by `git clone https://www.github.com/openwrt/openwrt -b branch_name`
 - Now change directory to openwrt by `cd openwrt`.This is our `<buildroot dir>` for this guide.
